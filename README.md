@@ -1,4 +1,4 @@
- # It's my first project with ReactJS
+ # New Facebook page with ReactJS
 
  This project isn't only CSS, my focus was use `props`, and when I saw the new Facebook design, I saw a good way put into practice
 what I learn.
