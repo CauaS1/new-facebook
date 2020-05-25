@@ -4,3 +4,13 @@
 what I learn.
 
  <img src="https://github.com/CauaS1/new-facebook/blob/master/fa.PNG" />
+ 
+ ## Dependences
+ 
+ If you got an error with the icons do this
+ 
+ ### Yarn
+ `yarn add react-icons`
+ 
+ ### NPM 
+ `npm install react-icons --save`
