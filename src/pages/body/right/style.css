@@ -1,0 +1,158 @@
+.right-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 290px;
+  /*Para nao ficar no meio
+    e so adicionar mais conteudos*/
+}
+
+.friends-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.friends-section h2, .group-list h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c9cbce;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.iconsC svg {
+  font-weight: 500;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  padding: 2.5px;
+  border-radius: 8px;
+}
+
+.iconsC svg:hover {
+  background-color: #303031;
+  cursor: pointer;
+}
+
+.contacts, .all-groups {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.contacts .fr, .gr {
+  display: flex;
+  margin: 5px 10px 0 0;
+  padding: 5px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fr:hover, .gr:hover {
+  background-color: #3a3b3c;
+}
+
+.fr h4, .gr h3 {
+  color: #c9cbce;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 10px 8px;
+}
+
+.contacts img, .all-groups img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  /*resolver o achatamento da imagem*/
+  margin: 0 10px;
+}
+
+.group-list {
+  margin: 10px 0px;
+}
+
+/*TOOLTIP Omar*/
+
+.contacts .fr {
+  position: relative;
+}
+
+.fr .tooltip {
+  visibility: hidden;
+  width: 290px;
+  height: 230px;
+  border: 0.5px solid gray;
+  background-color: #242526;
+  color: #c9cbce;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 102%;
+}
+
+.tooltip img {
+  object-fit: cover;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+}
+
+.tooltip button {
+  background: #3a3b3c;
+  padding: 8px 0;
+  border-radius: 7px;
+  border: none;
+  width: 150px;
+  margin: 15px 5px;
+  color: #c9cbce;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button svg {
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+
+.smallBtn svg {
+  position: relative;
+  left: 1px;
+}
+
+.tooltip .smallBtn {
+  width: 40px;
+}
+
+.tooltip h1, .tooltip p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tooltip p {
+  text-align: left;
+  margin: 3px 20px 0;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.fr:hover .tooltip {
+  visibility: visible;
+}
+
+/*END TOOLTIP*/
+
+@media (max-width: 1130px) {
+  .right-contents {
+    min-width: 260px;
+  }
+}
